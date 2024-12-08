@@ -21,6 +21,7 @@
 
       buildInputs = with pkgs; [
         glibc.static
+        gcc
       ];
     };
   };

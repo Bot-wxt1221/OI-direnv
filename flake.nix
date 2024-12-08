@@ -20,8 +20,8 @@
       ];
 
       buildInputs = with pkgs; [
-        glibc.static
         gcc
+        glibc.static
       ];
     };
   };

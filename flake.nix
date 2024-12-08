@@ -15,17 +15,13 @@
       };
     in pkgs.mkShell {
       packages = with pkgs; [
-        luogu-gcc.packages.${system}.gcc-930
+        gcc
         gdb
       ];
 
-      inputsFrom = with pkgs; [
+      buildInputs = with pkgs; [
         glibc.static
       ];
-
-      shellHook = ''
-        zsh
-      '';
     };
   };
 }
